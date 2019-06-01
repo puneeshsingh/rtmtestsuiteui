@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Smoke_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Smoke Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Smoke_Test_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Smoke_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Smoke_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Smoke_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Smoke_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Smoke_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Smoke_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="hide-methods failed suite-Smoke_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Smoke_Test_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="show-methods failed suite-Smoke_Test_Suite"> (show)</a> <!-- show-methods failed suite-Smoke_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testDeleteTaskToTrash(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)">testDeleteTaskToTrash(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testDeleteTaskToTrash(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)">testDeleteTaskToTrash(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="hide-methods passed suite-Smoke_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Smoke_Test_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="show-methods passed suite-Smoke_Test_Suite"> (show)</a> <!-- show-methods passed suite-Smoke_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Smoke_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testCreateNewTask(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)">testCreateNewTask(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testCreateNewTask(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)">testCreateNewTask(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testCreateNewTask(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)">testCreateNewTask(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testDeleteTaskToTrash(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)">testDeleteTaskToTrash(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testLoginPageLoaded">testLoginPageLoaded</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testLoginWithCredentials(puneesh.singh, test1234)">testLoginWithCredentials(puneesh.singh, test1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testUpdateTaskName(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)">testUpdateTaskName(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testUpdateTaskName(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)">testUpdateTaskName(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="com.pingidentity.TestRMLoginUsingTestNG" class="method navigator-link" hash-for-method="testUpdateTaskName(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)">testUpdateTaskName(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Smoke_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Smoke_Test_Suite" class="panel Smoke_Test_Suite">
+          <div class="suite-Smoke_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.pingidentity.TestRMLoginUsingTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteTaskToTrash(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)">
+                  </a> <!-- testDeleteTaskToTrash(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!) -->
+                  <span class="method-name">testDeleteTaskToTrash</span>
+                  <span class="parameters">(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.pingidentity.TestRMLoginUsingTestNG.testDeleteTaskToTrash(TestRMLoginUsingTestNG.java:109)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteTaskToTrash(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)">
+                  </a> <!-- testDeleteTaskToTrash(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!) -->
+                  <span class="method-name">testDeleteTaskToTrash</span>
+                  <span class="parameters">(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;Fj-an-Oj&quot; title=&quot;...&quot; style=&quot;user-select: none;&quot;&gt;Inbox&lt;/div&gt; is not clickable at point (98, 139). Other element would receive the click: &lt;div class=&quot;b-Nr-tp&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HeavenOnEarths-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:80d:13c3:97a2:c1f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.4&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: /var/folders/zb/9b6j_dss71q...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64433}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 2588803916a3d68e9d56d48ecb98a962
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at pages.TaskHome.deleteTask(TaskHome.java:145)
+	at com.pingidentity.TestRMLoginUsingTestNG.deleteTaskMethod(TestRMLoginUsingTestNG.java:162)
+	at com.pingidentity.TestRMLoginUsingTestNG.testDeleteTaskToTrash(TestRMLoginUsingTestNG.java:108)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-failed -->
+          <div class="suite-Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pingidentity.TestRMLoginUsingTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateNewTask(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)">
+                  </a> <!-- testCreateNewTask(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!) -->
+                  <span class="method-name">testCreateNewTask</span>
+                  <span class="parameters">(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateNewTask(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)">
+                  </a> <!-- testCreateNewTask(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!) -->
+                  <span class="method-name">testCreateNewTask</span>
+                  <span class="parameters">(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateNewTask(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)">
+                  </a> <!-- testCreateNewTask(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!) -->
+                  <span class="method-name">testCreateNewTask</span>
+                  <span class="parameters">(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteTaskToTrash(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)">
+                  </a> <!-- testDeleteTaskToTrash(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!) -->
+                  <span class="method-name">testDeleteTaskToTrash</span>
+                  <span class="parameters">(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginPageLoaded">
+                  </a> <!-- testLoginPageLoaded -->
+                  <span class="method-name">testLoginPageLoaded</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithCredentials(puneesh.singh, test1234)">
+                  </a> <!-- testLoginWithCredentials(puneesh.singh, test1234) -->
+                  <span class="method-name">testLoginWithCredentials</span>
+                  <span class="parameters">(puneesh.singh, test1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateTaskName(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)">
+                  </a> <!-- testUpdateTaskName(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!) -->
+                  <span class="method-name">testUpdateTaskName</span>
+                  <span class="parameters">(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateTaskName(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)">
+                  </a> <!-- testUpdateTaskName(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!) -->
+                  <span class="method-name">testUpdateTaskName</span>
+                  <span class="parameters">(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateTaskName(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)">
+                  </a> <!-- testUpdateTaskName(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!) -->
+                  <span class="method-name">testUpdateTaskName</span>
+                  <span class="parameters">(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-passed -->
+        </div> <!-- panel Smoke_Test_Suite -->
+        <div panel-name="test-xml-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/heavenonearth/Desktop/Ping/rtmtestsuiteui/RTMTestSuite/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Smoke Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test name=&quot;Smoke Test for Remember the Milk App&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pingidentity.TestRMLoginUsingTestNG&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke Test for Remember the Milk App --&gt;
+&lt;/suite&gt; &lt;!-- Smoke Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke Test for Remember the Milk App (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Smoke_Test_Suite');
+function tableData_Smoke_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testDeleteTaskToTrash')
+data.setCell(0, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(0, 3, 40858);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testUpdateTaskName')
+data.setCell(1, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(1, 3, 8445);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDeleteTaskToTrash')
+data.setCell(2, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(2, 3, 7972);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDeleteTaskToTrash')
+data.setCell(3, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(3, 3, 7071);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testCreateNewTask')
+data.setCell(4, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(4, 3, 7044);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testUpdateTaskName')
+data.setCell(5, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(5, 3, 6892);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testCreateNewTask')
+data.setCell(6, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(6, 3, 6876);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testCreateNewTask')
+data.setCell(7, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(7, 3, 6872);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testUpdateTaskName')
+data.setCell(8, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(8, 3, 6182);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testLoginWithCredentials')
+data.setCell(9, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(9, 3, 3965);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testLoginPageLoaded')
+data.setCell(10, 2, 'com.pingidentity.TestRMLoginUsingTestNG')
+data.setCell(10, 3, 48);
+window.suiteTableData['Smoke_Test_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Smoke_Test_Suite">
+              </div> <!-- times-div-Smoke_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pingidentity.TestRMLoginUsingTestNG</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginPageLoaded</span>
+                <span class="method-start">5101 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">5151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">7503 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithCredentials(puneesh.singh, test1234)</span>
+                <span class="method-start">11017 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">14983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">17252 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateNewTask(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)</span>
+                <span class="method-start">20704 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">27583 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">29829 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateNewTask(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)</span>
+                <span class="method-start">33367 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">40242 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">42444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateNewTask(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)</span>
+                <span class="method-start">46173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">53218 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">55492 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateTaskName(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)</span>
+                <span class="method-start">58975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">65869 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">68081 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateTaskName(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)</span>
+                <span class="method-start">71630 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">80077 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">82289 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateTaskName(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)</span>
+                <span class="method-start">86061 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">92244 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">94499 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteTaskToTrash(puneesh.singh, test1234, This is My FIRST TASK, Good Evening!)</span>
+                <span class="method-start">98170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">106145 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">108360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteTaskToTrash(puneesh.singh, test1234, This is My SECOND TASK, Good Evening!)</span>
+                <span class="method-start">112010 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">152872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">155042 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteTaskToTrash(puneesh.singh, test1234, This is My THIRD TASK, Good Evening!)</span>
+                <span class="method-start">158810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">165882 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

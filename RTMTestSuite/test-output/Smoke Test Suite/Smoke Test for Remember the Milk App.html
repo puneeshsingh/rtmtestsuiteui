@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>TestNG:  Smoke Test for Remember the Milk App</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke Test for Remember the Milk App</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 22 21:53:54 EDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>168 seconds (168098 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testDeleteTaskToTrash()'><b>testDeleteTaskToTrash</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234, This is My SECOND TASK, Good Evening!</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.pingidentity.TestRMLoginUsingTestNG.testDeleteTaskToTrash(TestRMLoginUsingTestNG.java:109)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1010434098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1010434098'><pre>java.lang.NullPointerException
+	at com.pingidentity.TestRMLoginUsingTestNG.testDeleteTaskToTrash(TestRMLoginUsingTestNG.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>40</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testDeleteTaskToTrash()'><b>testDeleteTaskToTrash</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234, This is My THIRD TASK, Good Evening!</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;Fj-an-Oj&quot; title=&quot;...&quot; style=&quot;user-select: none;&quot;&gt;Inbox&lt;/div&gt; is not clickable at point (98, 139). Other element would receive the click: &lt;div class=&quot;b-Nr-tp&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HeavenOnEarths-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:80d:13c3:97a2:c1f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.4&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: /var/folders/zb/9b6j_dss71q...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64433}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 2588803916a3d68e9d56d48ecb98a962
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at pages.TaskHome.deleteTask(TaskHome.java:145)
+	at com.pingidentity.TestRMLoginUsingTestNG.deleteTaskMethod(TestRMLoginUsingTestNG.java:162)
+	at com.pingidentity.TestRMLoginUsingTestNG.testDeleteTaskToTrash(TestRMLoginUsingTestNG.java:108)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089578710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089578710'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;Fj-an-Oj&quot; title=&quot;...&quot; style=&quot;user-select: none;&quot;&gt;Inbox&lt;/div&gt; is not clickable at point (98, 139). Other element would receive the click: &lt;div class=&quot;b-Nr-tp&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HeavenOnEarths-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:80d:13c3:97a2:c1f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.4&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: /var/folders/zb/9b6j_dss71q...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64433}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 2588803916a3d68e9d56d48ecb98a962
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at pages.TaskHome.deleteTask(TaskHome.java:145)
+	at com.pingidentity.TestRMLoginUsingTestNG.deleteTaskMethod(TestRMLoginUsingTestNG.java:162)
+	at com.pingidentity.TestRMLoginUsingTestNG.testDeleteTaskToTrash(TestRMLoginUsingTestNG.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testCreateNewTask()'><b>testCreateNewTask</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234, This is My FIRST TASK, Good Evening!</td>
+<td></td>
+<td>6</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testCreateNewTask()'><b>testCreateNewTask</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234, This is My SECOND TASK, Good Evening!</td>
+<td></td>
+<td>6</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testCreateNewTask()'><b>testCreateNewTask</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234, This is My THIRD TASK, Good Evening!</td>
+<td></td>
+<td>7</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testDeleteTaskToTrash()'><b>testDeleteTaskToTrash</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234, This is My FIRST TASK, Good Evening!</td>
+<td></td>
+<td>7</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testLoginPageLoaded()'><b>testLoginPageLoaded</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG</td>
+<td></td>
+<td>0</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testLoginWithCredentials()'><b>testLoginWithCredentials</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234</td>
+<td></td>
+<td>3</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testUpdateTaskName()'><b>testUpdateTaskName</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234, This is My FIRST TASK, Good Evening!</td>
+<td></td>
+<td>6</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testUpdateTaskName()'><b>testUpdateTaskName</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234, This is My SECOND TASK, Good Evening!</td>
+<td></td>
+<td>8</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+<tr>
+<td title='com.pingidentity.TestRMLoginUsingTestNG.testUpdateTaskName()'><b>testUpdateTaskName</b><br>Test class: com.pingidentity.TestRMLoginUsingTestNG<br>Parameters: puneesh.singh, test1234, This is My THIRD TASK, Good Evening!</td>
+<td></td>
+<td>6</td>
+<td>com.pingidentity.TestRMLoginUsingTestNG@c03cf28</td></tr>
+</table><p>
+</body>
+</html>

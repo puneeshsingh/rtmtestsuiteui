@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Test Suite]" guice-stage="DEVELOPMENT">
+  <test name="Smoke Test for Remember the Milk App(failed)">
+    <classes>
+      <class name="com.pingidentity.TestRMLoginUsingTestNG">
+        <methods>
+          <include name="testDeleteTaskToTrash" invocation-numbers="1 2"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.pingidentity.TestRMLoginUsingTestNG -->
+    </classes>
+  </test> <!-- Smoke Test for Remember the Milk App(failed) -->
+</suite> <!-- Failed suite [Smoke Test Suite] -->
